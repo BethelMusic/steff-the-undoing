@@ -1,0 +1,602 @@
+@font-face {
+  font-family: proxima-nova;
+  src: url(../fonts/proximanova-reg-webfont.eot), url(../fonts/proximanova-reg-webfont.svg), url(../fonts/proximanova-reg-webfont.ttf), url(../fonts/proximanova-reg-webfont.woff); }
+
+@font-face {
+  font-family: proxima-nova-light;
+  src: url(../fonts/proximanova-light-webfont.eot), url(../fonts/proximanova-light-webfont.svg), url(../fonts/proximanova-light-webfont.ttf), url(../fonts/proximanova-light-webfont.woff); }
+
+body {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 15px;
+  color: #222222;
+  line-height: 25px;
+  font-weight: 400; }
+
+h1 {
+  font-family: "Vollkhorn", serif;
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  margin-top: 0; }
+
+h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 26px;
+  line-height: 40px;
+  color: white;
+  -webkit-font-smoothing: antialiased !important;
+  font-style: italic;
+  text-shadow: 1px 2px 3px #222222;
+  text-align: center;
+  margin-top: 12px;
+  padding: 0 20px; }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 20px;
+      line-height: 32px; } }
+
+h3, h4 {
+  -webkit-font-smoothing: antialiased !important;
+  font-family: "proxima-nova", sans-serif;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 15px;
+  color: #979797;
+  text-align: left;
+  margin: 0; }
+  @media (max-width: 991px) {
+    h3 {
+      font-size: 14px; } }
+
+h4 {
+  font-size: 13px;
+  color: #979797;
+  margin: 50px 20px 40px; }
+  @media (max-width: 767px) {
+    h4 {
+      font-size: 9px;
+      margin: 40px 45px 20px;
+      line-height: 20px; } }
+
+a {
+  -webkit-transition: all 350ms ease;
+  -moz-transition: all 350ms ease;
+  transition: all 350ms ease;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+p {
+  margin: 25px 0 30px; }
+
+.btn {
+  background: #e9e9e9;
+  border-radius: 0;
+  padding: 8px 25px 7px;
+  -webkit-transition: all 350ms ease;
+  -moz-transition: all 350ms ease;
+  transition: all 350ms ease; }
+  .btn a {
+    color: #222222;
+    font-family: "Vollkhorn", serif;
+    letter-spacing: 2px;
+    font-size: 18px; }
+  .btn:hover {
+    background: #222222; }
+    .btn:hover a {
+      color: white;
+      -webkit-font-smoothing: antialiased !important; }
+
+.container {
+  text-align: center; }
+  @media (max-width: 1199px) {
+    .container {
+      padding: 0; } }
+  @media (max-width: 991px) {
+    .container {
+      width: 100%;
+      padding: 0 30px; } }
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 30px; } }
+
+.section {
+  background-color: white;
+  color: black; }
+
+.section-margin {
+  margin-top: 115px;
+  margin-bottom: 60px; }
+  @media (max-width: 767px) {
+    .section-margin {
+      margin-top: 85px;
+      margin-bottom: 45px; } }
+
+.logo {
+  padding: 60px 0; }
+  @media (max-width: 767px) {
+    .logo {
+      padding: 40px 0; }
+      .logo img {
+        width: 240px;
+        height: auto; } }
+
+.active {
+  color: white; }
+
+#about-section, #videos-section, #listen-section {
+  margin-top: -60px; }
+  @media (max-width: 767px) {
+    #about-section, #videos-section, #listen-section {
+      margin-top: -40px; } }
+
+/* ==========================================================================
+ * MAIN NAV
+ * ========================================================================== */
+.navbar-collapse {
+  /* Change width to 730px when Purchase Link get's put back */
+  width: 556px;
+  margin: 0 auto !important; }
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      width: 100%; } }
+
+.navbar {
+  font-weight: 500;
+  font-size: 14px; }
+
+.navbar-nav > .active > a {
+  background: #222222; }
+
+.navbar-brand {
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 2px; }
+
+:hover .navbar-brand:hover {
+  color: white; }
+
+.navbar-inverse {
+  border: none;
+  background: #e9e9e9; }
+  .navbar-inverse .navbar-nav > li > a {
+    color: #222222;
+    font-family: "Vollkhorn", serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 22px 30px; }
+    .navbar-inverse .navbar-nav > li > a:hover {
+      color: #777777; }
+  .navbar-inverse .navbar-nav > li > a:focus {
+    outline: none !important;
+    color: #222222 !important; }
+  @media (max-width: 767px) {
+    .navbar-inverse {
+      border-bottom: 1px solid #535353;
+      background: #222222; }
+      .navbar-inverse .navbar-toggle {
+        border: none;
+        padding: 7px 0;
+        margin-right: 0; }
+        .navbar-inverse .navbar-toggle:hover {
+          background: #222222; }
+        .navbar-inverse .navbar-toggle:focus {
+          box-shadow: none !important; }
+        .navbar-inverse .navbar-toggle .icon-bar {
+          width: 30px; }
+        .navbar-inverse .navbar-toggle .icon-bar + .icon-bar {
+          margin-top: 7px; }
+      .navbar-inverse .navbar-collapse {
+        border: none !important;
+        box-shadow: none; }
+        .navbar-inverse .navbar-collapse .navbar-nav {
+          margin: 10px 0; }
+        .navbar-inverse .navbar-collapse .navbar-nav > li > a {
+          color: #f7f7f7;
+          -webkit-font-smoothing: antialiased !important;
+          padding: 0 0 40px; } }
+
+/* ==========================================================================
+ * HEADER SECTION
+ * ========================================================================== */
+#header-section img {
+  width: 100%;
+  margin-top: 60px; }
+  @media (max-width: 767px) {
+    #header-section img {
+      margin-top: 40px; } }
+
+/* ==========================================================================
+ * ABOUT SECTION
+ * ========================================================================== */
+#about-section {
+  background: #fafafa; }
+
+.about {
+  width: 79%;
+  margin: 0 auto; }
+  .about h1 {
+    padding: 0 70px; }
+  @media (max-width: 1199px) {
+    .about {
+      width: 96%; }
+      .about h1 {
+        padding: 0 65px; } }
+  @media (max-width: 767px) {
+    .about {
+      width: 100%; }
+      .about h1 {
+        padding: 0;
+        font-size: 17px;
+        line-height: 26px; } }
+
+/* ==========================================================================
+ * PARALLAX SECTION
+ * ========================================================================== */
+#quote-section article {
+  padding: 110px 0 0; }
+  #quote-section article img {
+    width: 140px;
+    margin: 0 auto;
+    display: block; }
+  @media (max-width: 767px) {
+    #quote-section article {
+      padding: 70px 0 0; }
+      #quote-section article img {
+        width: 120px; } }
+
+section {
+  position: relative;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  section:nth-of-type(1) {
+    background: #fafafa; }
+  section:nth-of-type(1) {
+    height: 350px;}
+    @media (max-width: 767px) {
+      section:nth-of-type(1) {
+        height: 300px; } }
+
+#quote-section > div:nth-of-type(1) {
+  background: url(../img/piano1.jpg)50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  position: absolute;
+  width: 100%; }
+  @media (max-width: 767px) {
+    #quote-section > div:nth-of-type(1) {
+      height: 300px;
+      background: url(../img/piano-mobile.jpg) 50% 0 repeat-y fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+section article {
+  position: absolute;
+  width: 100%;
+  z-index: 4; }
+
+/* ==========================================================================
+ * VIDEOS SECTION
+ * ========================================================================== */
+#videos-section {
+  background: #fafafa; }
+  #videos-section .col-sm-4 {
+    margin: 20px 0 0; }
+    #videos-section .col-sm-4 img {
+      height: 232px;
+      opacity: 0.6; }
+      @media (max-width: 1199px) {
+        #videos-section .col-sm-4 img {
+          height: 196px; } }
+      @media (max-width: 991px) {
+        #videos-section .col-sm-4 img {
+          height: 171px; } }
+     
+    #videos-section .col-sm-4 #vid-1 .video-title,
+    #videos-section .col-sm-4 #vid-2 .video-title,
+    #videos-section .col-sm-4 #vid-3 .video-title {
+      font-size: 30px;
+      color: #fff;
+      text-transform: uppercase;
+      padding-top: 105px;
+      font-family: "proxima-nova-light", sans-serif;
+      letter-spacing: 2px; 
+      display: none } 
+      @media (max-width: 1199px) {
+        #videos-section .col-sm-4 #vid-1 .video-title,
+        #videos-section .col-sm-4 #vid-2 .video-title,
+        #videos-section .col-sm-4 #vid-3 .video-title {
+          padding-top: 80px; }
+        }
+      @media (max-width: 991px) {
+        #videos-section .col-sm-4 #vid-1 .video-title,
+        #videos-section .col-sm-4 #vid-2 .video-title,
+        #videos-section .col-sm-4 #vid-3 .video-title {
+          padding-top: 75px;
+          font-size: 24px; }
+        }
+      @media (max-width: 767px) {
+        #videos-section .col-sm-4 #vid-1 .video-title,
+        #videos-section .col-sm-4 #vid-2 .video-title,
+        #videos-section .col-sm-4 #vid-3 .video-title {
+          font-size: 18px; }
+      }
+    
+    #videos-section .col-sm-4 .no-show {
+      cursor: initial!important;
+    }
+
+    #videos-section .col-sm-4 #vid-1, 
+    #videos-section .col-sm-4 #vid-2, 
+    #videos-section .col-sm-4 #vid-3,
+    #videos-section .col-sm-4 .no-show {
+      height: 232px;
+      width: 100%;
+      overflow: hidden;
+      cursor: pointer;
+      -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+      transition: all 200ms ease; }
+      @media (max-width: 1199px) {
+        #videos-section .col-sm-4 #vid-1, 
+        #videos-section .col-sm-4 #vid-2, 
+        #videos-section .col-sm-4 #vid-3,
+        #videos-section .col-sm-4 .no-show {
+          height: 196px; } }
+      @media (max-width: 991px) {
+        #videos-section .col-sm-4 #vid-1, 
+        #videos-section .col-sm-4 #vid-2, 
+        #videos-section .col-sm-4 #vid-3,
+        #videos-section .col-sm-4 .no-show {
+          height: 171px; } }
+      @media (max-width: 767px) {
+        #videos-section .col-sm-4 #vid-1, 
+        #videos-section .col-sm-4 #vid-2, 
+        #videos-section .col-sm-4 #vid-3,
+        #videos-section .col-sm-4 .no-show {
+          width: 100%;
+          height: 180px; } }
+    #videos-section .col-sm-4 #vid-1 {
+      background: url(../img/video1.jpg) no-repeat center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      #videos-section .col-sm-4 #vid-1:hover {
+        background: url(../img/video1h.jpg) no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+        @media (max-width: 767px) {
+          #videos-section .col-sm-4 #vid-1:hover {
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain; } }
+      @media (max-width: 767px) {
+        #videos-section .col-sm-4 #vid-1 {
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -o-background-size: contain;
+          background-size: contain; } }
+    #videos-section .col-sm-4 #vid-2 {
+      background:green;
+      background: url(../img/video2.jpg) no-repeat center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      #videos-section .col-sm-4 #vid-1:hover .video-title,
+      #videos-section .col-sm-4 #vid-2:hover .video-title,
+      #videos-section .col-sm-4 #vid-3:hover .video-title {
+        display: block; }
+      #videos-section .col-sm-4 #vid-2:hover {
+        background: url(../img/video2h.jpg) no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+        @media (max-width: 767px) {
+          #videos-section .col-sm-4 #vid-2:hover {
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain; } }
+      @media (max-width: 767px) {
+        #videos-section .col-sm-4 #vid-2 {
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -o-background-size: contain;
+          background-size: contain; } }
+    #videos-section .col-sm-4 #vid-3 {
+      background: url(../img/video3.jpg) no-repeat center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      #videos-section .col-sm-4 #vid-3:hover {
+        background: url(../img/video3h.jpg) no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+        @media (max-width: 767px) {
+          #videos-section .col-sm-4 #vid-3:hover {
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain; } }
+      @media (max-width: 767px) {
+        #videos-section .col-sm-4 #vid-3 {
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -o-background-size: contain;
+          background-size: contain; } }
+
+
+      @media (max-width: 767px) {
+        #videos-section .col-sm-4 #vid-1 .video-title,
+        #videos-section .col-sm-4 #vid-2 .video-title,
+        #videos-section .col-sm-4 #vid-3 .video-title {
+          display: block; }
+
+        #videos-section .col-sm-4 #vid-1 {
+          background: url(../img/video1h.jpg) no-repeat center;
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -o-background-size: contain;
+          background-size: contain; }
+        #videos-section .col-sm-4 #vid-2 {
+          background: url(../img/video2h.jpg) no-repeat center;
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -o-background-size: contain;
+          background-size: contain; } 
+        #videos-section .col-sm-4 #vid-3 {
+          background: url(../img/video3h.jpg) no-repeat center;
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -o-background-size: contain;
+          background-size: contain; } }
+
+
+
+
+/* ==========================================================================
+ * PHOTO SECTION
+ * ========================================================================== */
+#photo-section img {
+  width: 100%; }
+
+/* ==========================================================================
+ * LISTEN SECTION
+ * ========================================================================== */
+#listen-section, #purchase-section {
+  background: #222222; }
+  #listen-section .section-margin, #purchase-section .section-margin {
+    margin: 124px auto 50px;
+    width: 79%; }
+    @media (max-width: 1199px) {
+      #listen-section .section-margin, #purchase-section .section-margin {
+        width: 96%; } }
+    @media (max-width: 991px) {
+      #listen-section .section-margin, #purchase-section .section-margin {
+        width: 100%; } }
+    @media (max-width: 767px) {
+      #listen-section .section-margin, #purchase-section .section-margin {
+        width: 260px;
+        margin-top: 85px; }
+        #listen-section .section-margin .col-sm-4, #purchase-section .section-margin .col-sm-4 {
+          padding: 0; } }
+  #listen-section h1, #purchase-section h1 {
+    color: white;
+    -webkit-font-smoothing: antialiased !important;
+    margin-bottom: 40px; }
+
+/* ==========================================================================
+ * AUDIO PLAYER
+ * ========================================================================== */
+.mejs-container {
+  background: transparent;
+  width: 100% !important; }
+  .mejs-container .mejs-controls {
+    background: transparent; }
+    .mejs-container .mejs-controls .mejs-time, .mejs-container .mejs-controls .mejs-volume-button, .mejs-container .mejs-controls .mejs-horizontal-volume-slider {
+      display: none; }
+    .mejs-container .mejs-controls .mejs-button {
+      float: right;
+      margin-top: -22px; }
+      .mejs-container .mejs-controls .mejs-button button:focus {
+        outline: none; }
+    .mejs-container .mejs-controls .mejs-play button {
+      background: transparent url(../img/play.png) no-repeat;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain; }
+    .mejs-container .mejs-controls .mejs-pause button {
+      background: transparent url(../img/pause.png) no-repeat;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain; }
+    .mejs-container .mejs-controls .mejs-time-rail {
+      width: 100% !important; }
+      .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total {
+        width: 100% !important;
+        margin: 0;
+        height: 2px;
+        background: #2d2d2d;
+        border-radius: 0; }
+        .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-loaded {
+          height: 2px;
+          background: #2d2d2d; }
+        .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-current {
+          height: 2px;
+          background: #535353; }
+
+/* ==========================================================================
+ * PURCHASE SECTION
+ * ========================================================================== */
+#purchase-section {
+  background: #222222; }
+  #purchase-section .container {
+    padding: 0 0 60px; }
+  @media (max-width: 767px) {
+    #purchase-section {
+      margin-top: -40px; }
+      #purchase-section .container {
+        padding: 85px 0 50px; } }
+  #purchase-section .btn {
+    background: #e9e9e9; }
+    #purchase-section .btn:hover {
+      background: #979797; }
+
+/* ==========================================================================
+ * FOOTER SECTION
+ * ========================================================================== */
+#footer {
+  background: url(../img/speckle.png) 50% 0 repeat fixed;
+  border-bottom: 40px solid #222222;
+  color: white;
+  padding: 60px 0 0;
+  text-align: center; }
+  @media (max-width: 767px) {
+    #footer {
+      padding: 50px 0 0; } }
+  #footer a {
+    color: white;
+    background: #535353;
+    padding: 18px 9px 18px 15px;
+    margin: 0 7px;
+    border-radius: 50%; }
+    #footer a:hover {
+      background: #979797; }
+    #footer a:last-child {
+      padding-right: 14px; }
+    #footer a img {
+      width: 30px;
+      height: 30px; }
+    @media (max-width: 767px) {
+      #footer a {
+        padding: 11px 5px 11px 10px;
+        margin: 0 5px; }
+        #footer a:last-child {
+          padding-right: 10px; }
+        #footer a img {
+          width: 20px;
+          height: 20px; } }
